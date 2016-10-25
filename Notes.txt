@@ -1,0 +1,23 @@
+Additional Notes:
+
+If you want to edit camera parameters using a GUI and/or use RViz:
+
+$ sudo apt-get install ros-kinetic-rviz
+$ sudo apt-get install ros-kinetic-rqt-reconfigure
+
+To adjust camera parameters after the realsense node has been launched:
+
+$ rosrun rqt_reconfigure rqt_reconfigure
+
+The launch files are located in the launch directory, for example:
+
+$ roslaunch realsense_camera r200_nodelet_rgbd.launch 
+
+Before running rviz, you may need to set up a frame of reference:
+
+$ rosrun tf static_transform_publisher 0.0 0.0 0.0 0.0 0.0 0.0 map camera_depth_optical_frame 100
+
+roscd realsense_camera
+rosrun rviz rviz -d rviz/realsenseRvizConfiguration1.rviz
+
+
