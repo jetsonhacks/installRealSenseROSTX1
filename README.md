@@ -16,4 +16,4 @@ This step, the third step, is to install librealsense and realsense as ROS packa
 
 The script 'setupTX1.sh' simply turns off the USB autosuspend setting on the TX1 so that the camera is always available. 
 
-This is for realsense version 1.5.
+This installs realsense version 1.5.
