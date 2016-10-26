@@ -84,6 +84,7 @@ echo "Librealsense installed."
 cd $INSTALLDIR
 echo "Starting installation of RealSense ROS package"
 echo "Installing support packages"
+sudo apt-get update
 sudo apt-get install ros-kinetic-cv-bridge -y
 sudo apt-get install ros-kinetic-image-transport -y
 sudo apt-get install ros-kinetic-camera-info-manager -y
